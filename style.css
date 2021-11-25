@@ -2,23 +2,34 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background-color: hsl(257, 40%, 49%);
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     background-image: url(img/bg-desktop.svg);
+    background-size: cover; 
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    margin: auto;
+    width: 100%;
 }
+
 .logo{
-    margin: 55px 0 65px 70px;
+    margin: 55px 50px 70px;
+}
+.bg{
+    padding-left: 39px;
 }
 .content{
     display: flex;
     margin: auto;
-    width: 100%;
     color: white;
-    margin-left: 70px;
+}
+
+@media screen and (max-width: 1144px) {
+    .text{
+        text-align: center;
+    }
 }
 .text{
     margin: 60px;
@@ -27,13 +38,14 @@ h1{
     line-height: 1.6em;
     font-size: 45px;
 }
+
 p{
     line-height: 1.6em;
-    font-size: 23px;
+    font-size: 20px;
     padding-top: 20px;
 }
 button{
-    margin-top: 12px;
+    margin-top: 20px;
     border: none;
     color: hsl(257, 40%, 49%);
     border-radius: 35px;
@@ -47,7 +59,190 @@ button:hover{
     background-color: hsl(300, 69%, 71%);
     color: white;
 }
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-right: 70px;
+}
 .icon{
-    width: 50px;
+    width: 40px;
+    padding: 0 20px;
+}
+.two:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1270px) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        width: 100%;
+    }
     
+    .text{
+        text-align: center;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1147px) {
+    .illustration-mockups{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1149px) {
+    body{
+        background-image: url(img/bg-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        overflow-x: hidden !important;
+    }
+    .logo{
+        margin-bottom: 150px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .illustration-mockups{
+        width: 90%;
+    }
+    .bg{
+        width: 50%;
+    }
+    .writeups{
+        margin-top: 40px;
+        width: 80%;
+    }
+    .text{
+        align-items: center;
+    }
+    
+    .icons{
+        justify-content: center;
+    }
+    button{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .bg{
+        width: 70%;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .bg{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 787px) {
+    .bg{
+        padding-right: 45px;
+    }
+    .icons{
+        padding-left: 45px
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 19px;
+        font-weight: 100;
+    }
+    img{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 666px) {
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 16px;
+    }
+    button{
+        width: 250px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .icons{
+        margin: auto;
+        width: 13%;
+        padding: 0 20px;
+        padding-bottom: 35px;
+    }
+    .bg{
+        width: 90%;
+    }
+    .logo{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 425px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    h1{
+        font-size: 21px;
+    }
+    p{
+        font-size: 12px;
+    }
+    button{
+        width: 220px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .icons{
+        margin: auto;
+        width: 16%;
+        padding: 0 20px;
+        padding-bottom: 35px;
+    }
+    .bg{
+        width: 90%;
+        margin-bottom: -55px;
+    }
+    .logo{
+        margin: 35px 0px 65px 45px;
+    }
+    img{
+        width: 155px;
+    }
+}
+@media screen and (max-width: 375px) {
+    h1{
+        font-size: 17px;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        width: 190px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .bg{
+        padding-right: 0;
+        padding-left: 12px;
+    }
+    img{
+        width: 150px;
+    }
 }
