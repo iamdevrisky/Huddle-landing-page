@@ -16,6 +16,7 @@ body{
 
 .bg{
     margin: auto;
+    padding: 0 45px;
 }
 .logo{
     margin: 55px 40px 70px;
@@ -244,8 +245,7 @@ button:hover{
         font-size: 13px;
     }
     .bg{
-        padding-right: -0px;
-        padding-left: -100px;
+        padding: 0 0;
     }
     img{
         width: 150px;
